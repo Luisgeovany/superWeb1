@@ -1,3 +1,4 @@
+  
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,13 +9,13 @@
 </head>
 <body>
     <header>
-        <h1>METODO POST</h1>
+        <h1>METODO GET</h1>
         <hr>
     </header>
     <main>
         <div class="container">
         
-            <form action="servidorPOST.php" method="POST">
+            <form action="servidorGET.php" method="GET">
                 <div class="row">
                     <div class="col">
                     <input type="text" class="form-control" placeholder="usuario" name="nombre">
