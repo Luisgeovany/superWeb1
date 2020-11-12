@@ -1,8 +1,9 @@
 <?php
 include("BaseDatos.php");
+
 if(isset($_POST["botonEnvio"])){
 
-    //1. recibir datos
+    //1. recibir datos desde la vista(interfaz del usuario)
     $nombre=$_POST["nombre"];
     $apellido=$_POST["apellido"];
     $descripcion=$_POST["descripcion"];
