@@ -16,7 +16,7 @@
         $transaccion= new BaseDatos();
 
         //2. Crear la consulta SQL para buscar datos
-        $consultaSQL="SELECT * FROM usuarios WHERE 1";
+        $consultaSQL="SELECT * FROM usuarios ";
 
         //3. Utilizar el metodo para consultarDatos()
         $usuarios=$transaccion->consultarDatos($consultaSQL);
@@ -33,10 +33,11 @@
 
                 <div class="col mb-4">
                     <div class="card h-100">
-                        <img src="http://placeimg.com/640/480/people" class="card-img-top" alt="imagen">
+                        <img src="<?php echo($usuario["foto"])?>" class="card-img-top" alt="imagen">
                         <div class="card-body">
                             <h3 class="card-title"><?php echo($usuario["nombre"]) ?></h3>
                             <p class="card-text"><?php echo($usuario["descripcion"]) ?></p>
+                            <a href="eliminarUsuarios.php?id=<?php echo($usuario["IDUsuario"])?>" class="btn btn-danger">Eliminar</a>
                         </div>
                     </div>
                 </div>
